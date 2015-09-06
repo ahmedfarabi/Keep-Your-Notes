@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background" >
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+	    android:layout_marginBottom="3dp"
+	    android:layout_marginLeft="8dp"
+	    android:layout_marginRight="10dp"
+        android:text=" + Add new note" />
+  
+     <TextView
+         android:id="@+id/rem"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/add"
+         android:layout_below="@+id/add"
+         android:layout_marginLeft="5dp"
+         android:layout_marginBottom="5dp"
+         android:text="Click on a note to view and Long click to remove :)"
+         android:textSize="13sp"
+         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+     
+     
+     <ListView
+         android:id="@android:id/list"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_alignParentLeft="true"
+         android:layout_marginTop="5dp"
+		 android:layout_marginBottom="8dp"
+		 android:layout_marginLeft="8dp"
+		 android:layout_marginRight="15dp"
+         android:layout_below="@+id/rem"
+         android:layout_weight="1"
+         android:background="@drawable/shape"
+         android:textSize="12sp"
+         android:padding="1dp"
+         android:dividerHeight="1dp"
+    	 android:divider="@drawable/list_item" >
+     </ListView>
+
+     <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@+id/rem"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginLeft="8dp"
+		android:layout_marginRight="15dp"
+        android:background="@drawable/shape"
+        android:text="Note List is Empty.Press ADD button to add a note." />
+
+</RelativeLayout>

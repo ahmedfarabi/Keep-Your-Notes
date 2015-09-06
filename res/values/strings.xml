@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Keep Your Notes</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="reminder_choose">Choose Reminder:</string>
+    <string name="reminder_on">Set Reminder(Edit mode)</string>
+    <string name="reminder_off">Reminder Off</string>
+    
+    <string name="remove_question">Are you sure you want to remove this note?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+
+</resources>
